@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Biostat Methods 2
-tagline: Spring, 2014
+title: Intro to Statistical Computing with R
+tagline: Fall, 2014
 ---
 
 
