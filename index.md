@@ -38,5 +38,5 @@ None at the moment.
 ---
 
 Sources on [github](http://github.com):<br>
-&nbsp; &nbsp; The [source for the website](https://github.com/nickreich/statComp2014/tree/tree/gh-pages)
+&nbsp; &nbsp; The [source for the website](https://github.com/nickreich/statComp2014/tree/tree/gh-pages) <br>
 &nbsp; &nbsp; The [source for other material](https://github.com/nickreich/statComp2014/tree/master)
