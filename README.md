@@ -1,10 +1,9 @@
-## Biostatistics Methods 2: Statistical modeling and data visualization
+## Introduction to Statistical Comuting with R
 
-Materials for a one-credit course on statistical computing with R at UMass&ndash;Amherst in Spring, 2014.
+Materials for a one-credit course on statistical computing with R at UMass&ndash;Amherst in Fall, 2014.
 
 - The [website](http://nickreich.github.io/statComp2014)
 - The [source for the website](https://github.com/nickreich/statComp2014/tree/gh-pages)
-- The [source for other material](https://github.com/nickreich/statComp2014/tree/master)
 
 ---
 
