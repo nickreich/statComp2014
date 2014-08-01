@@ -8,7 +8,7 @@ pygments: true
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title : Statistical Modeling and Data Visualization
+title : Introduction to Statistical Computing with R
 author :
   name : Nicholas Reich
   email : nick@umass.edu
@@ -16,7 +16,7 @@ author :
   twitter : reichlab
   feedburner : nil
 
-production_url : http://nickreich.github.io/methods2
+production_url : http://nickreich.github.io/statComp2014
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #

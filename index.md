@@ -12,31 +12,31 @@ tagline: Spring, 2014
 
 #### Details
 
-**Course number**: PUBHLTH 690NR 
+**Course number**: PUBHLTH 597? 
 
 **Instructor**: [Nicholas Reich](http://people.umass.edu/nick)
 
-**Office hours**: Wed 9&ndash;10
+<!--**Office hours**: Wed 9&ndash;10-->
 
-**Prerequisite**: Some knowledge of [R](http://www.r-project.org).
+**Prerequisite**: None.
 
-**Lectures**: Tu/Th, 11:15am&ndash;12:30pm, LGRC A203
+**Lectures**: Wed 1:25&ndash;2:15
 
 **[Schedule](pages/schedule.html)**
 
 <!--**[Resources and further reading](pages/resources.html)** -->
 
 **Required books** 
-KNN
+None at the moment.
 
-**Recommended books** 
-&nbsp; &nbsp; Y Xie, _[Dynamic documents with R and knitr](http://www.amazon.com/exec/obidos/ASIN/1482203537/7210-20)_<br>
-ggplot2 by Hadley Wickham
+**Recommended books** <br>
+&nbsp; &nbsp; D Diez, C Barr, and M Cetinkaya-Rundel. (2012) _[OpenIntro Statistics](http://www.openintro.org/stat/index.php)_ 2nd Edition. <br>
+&nbsp; &nbsp; Y Xie. (2013) _[Dynamic documents with R and knitr](http://www.amazon.com/exec/obidos/ASIN/1482203537/7210-20)_<br>
+&nbsp; &nbsp; H Wickham. (2009) _[ggplot2: Elegant Graphics for Data Analysis](http://www.amazon.com/ggplot2-Elegant-Graphics-Data-Analysis/dp/0387981403/)_
 
-**Project**
 
 ---
 
 Sources on [github](http://github.com):
-- The [source for the website](https://github.com/nickreich/methods2/tree/tree/gh-pages)
-- The [source for other material](https://github.com/nickreich/methods2/tree/master)
+- The [source for the website](https://github.com/nickreich/statComp2014/tree/tree/gh-pages)
+- The [source for other material](https://github.com/nickreich/statComp2014/tree/master)

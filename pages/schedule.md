@@ -1,6 +1,6 @@
-Class Schedules (Spring 2014)
+Class Schedules (Fall 2014)
 -------
-**Statistical Modeling and Data Visualization  (PUBHLTH 690NR)**   
+**Introduction to Statistical Computing with R  (PUBHLTH XXX)**   
 **Taught by [Nicholas Reich](http://people.umass.edu/nick), UMass Biostatistics**
 
 _Shortcuts to classes_
