@@ -3,6 +3,12 @@ Class Schedules (Fall 2014)
 **Introduction to Statistical Computing with R  (PUBHLTH XXX)**   
 **Taught by [Nicholas Reich](http://people.umass.edu/nick), UMass Biostatistics**
 
+date  | class number | topic
+------------- | ------------- |
+Content Cell  | Content Cell  |
+Content Cell  | Content Cell  |
+
+
 #### Class 1 (Jan 21): Course Introduction 
 _Activities_
 
