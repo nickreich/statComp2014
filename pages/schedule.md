@@ -8,4 +8,3 @@ tagline: Fall, 2014
 **Taught by [Nicholas Reich](http://people.umass.edu/nick), UMass Biostatistics**
 
 
-test
