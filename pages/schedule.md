@@ -42,5 +42,3 @@ _Homework_
   * What are the key variables and what do their distributions look like?
   * Is there a pair of variables that might work well for a Simple Linear Regression? (You don't necessarily need to run one, but you could.)
   * Are there any obvious outliers in the data?
-
-#### Class 3 ...
