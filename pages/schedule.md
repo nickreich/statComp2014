@@ -22,6 +22,16 @@ _Skills covered_
 _Activities_
 
 * Facebook data vsualization
+* permutation test with facebook data
+* estimate percentage of earth's surface covered with water, fraction w/in 5 miles of a highway, etc... (using mosaic, rgeo() and googleMap())
+<!--
+```
+places <- rgeo(2); places
+northern.places <- rgeo(2, latlim=c(0,90)) ; northern.places
+googleMap(position=places, radius=3, mark=TRUE, zoom=10)
+```
+-->
 * Lowell Reed simulation
-* In-class visualization challenge
-* 
+* In-class visualization challenge (in teams, each student showing up with a draft)
+* Walk through a visualization tutorial (with new data?)
+* write a simple likelihood function
