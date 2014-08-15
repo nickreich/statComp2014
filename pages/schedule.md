@@ -21,7 +21,7 @@ _Skills covered_
 
 _Activities_
 
-* Lady tasting tea simulation
+* Lady tasting tea simulation (from MOSAIC)
 * Facebook data vsualization
 * permutation test with facebook data
 * estimate percentage of earth's surface covered with water, fraction w/in 5 miles of a highway, etc... (using mosaic, rgeo() and googleMap())
