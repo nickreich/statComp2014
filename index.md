@@ -5,14 +5,15 @@ tagline: Fall, 2014
 ---
 
 
-#### Course summary
+#### Course summary and goals
 
+The aim of this course is to provide students a foundational training in the modern tools of statistical computing and reproducible research. In particular, we will focus on learning the R programming language, the RMarkdown syntax, and the git version control system. Students will learn how to manipulate, summarize, analyze, and visualize data using R. This course will focus more on the computing than on the statistics, but students will be exposed to statistical concepts and strategies such as sampling, simulation, expected values, etc... along the way. 
 
 ---
 
 #### Details
 
-**Course number**: PUBHLTH 597? 
+**Course number**: PUBHLTH 597
 
 **Instructor**: [Nicholas Reich](http://people.umass.edu/nick)
 
@@ -22,17 +23,20 @@ tagline: Fall, 2014
 
 **Lectures**: Wed 1:25&ndash;2:15
 
-**[Schedule](pages/schedule.html)**
-
 <!--**[Resources and further reading](pages/resources.html)** -->
 
-**Required books** 
-None at the moment.
+**Required books** <br>
+&nbsp; &nbsp; P Daalgard. (2008) {\em Introductory Statistics with R}, 2nd edition. [free download via UMass library]  
 
-**Recommended books** <br>
-&nbsp; &nbsp; D Diez, C Barr, and M Cetinkaya-Rundel. (2012) _[OpenIntro Statistics](http://www.openintro.org/stat/index.php)_ 2nd Edition. <br>
+**Other books of possible interest** <br>
 &nbsp; &nbsp; Y Xie. (2013) _[Dynamic documents with R and knitr](http://www.amazon.com/exec/obidos/ASIN/1482203537/7210-20)_<br>
-&nbsp; &nbsp; H Wickham. (2009) _[ggplot2: Elegant Graphics for Data Analysis](http://www.amazon.com/ggplot2-Elegant-Graphics-Data-Analysis/dp/0387981403/)_
+&nbsp; &nbsp; H Wickham. (2009) _[ggplot2: Elegant Graphics for Data Analysis](http://www.amazon.com/ggplot2-Elegant-Graphics-Data-Analysis/dp/0387981403/)_ [also available for download through UMass library]
+
+**Online course resources**
+
+* [Piazza forum](http://piazza.com/umass/fall2014/pubhlth597/home)
+* [PDF syllabus](assets/statComp2014_ReichSyllabus.pdf)
+* [Detailed Course Schedule](pages/schedule.html)
 
 
 ---
