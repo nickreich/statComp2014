@@ -19,9 +19,11 @@ _Homework_
 ```
 1: Basic Building Blocks
 ```
+
 ```
 2: Sequences of Numbers
 ```
+
 ```
 3: Vectors
 ```
