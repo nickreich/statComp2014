@@ -18,6 +18,8 @@ _Homework_
 * Complete the [swirl](http://swirlstats.com/students.html) R Programming course, modules 1-3.
 ```
 1: Basic Building Blocks
+
 2: Sequences of Numbers
+
 3: Vectors
 ```
