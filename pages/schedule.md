@@ -4,7 +4,7 @@ title: Class schedules
 tagline: Fall, 2014
 ---
 
-**Introduction to Statistical Computing with R  (PUBHLTH XXX)**   
+**Introduction to Statistical Computing with R  (PUBHLTH 597)**   
 **Taught by [Nicholas Reich](http://people.umass.edu/nick), UMass Biostatistics**
 
 
@@ -13,7 +13,7 @@ tagline: Fall, 2014
 
 _Skills covered_
 
-* Week 1: Getting up and running with R
+* [Week 1: Getting up and running with R](pages/week1.html)
 * Week 2: Data types
 * Week 3: Data manipulation 1 (subsetting, reading, writing)
 * Week 4: Data visualization 1
