@@ -13,6 +13,7 @@ _Activities_
 
 _Homework_
 
+* Read syllabus
 * Install R, RStudio
 * Watch [Overview and history of R](https://www.youtube.com/watch?v=kzxHxFHW6hs)
 * Complete the [swirl](http://swirlstats.com/students.html) R Programming course, modules 1-3.
