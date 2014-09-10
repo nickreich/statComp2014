@@ -1,31 +1,29 @@
 ---
 layout: page
-title: Week 1
+title: Week 2
 tagline: Fall, 2014
 ---
 
 
 _Activities_
 
-* Welcome, introductions, syllabus hand-out, review course website and course goals (15 min)
-* Lecture: [what is R?](./lectures/week1/WhatIsR.pdf) (20 min)
-* swirl demo (15 min)
+* Quiz (10 min)
+* Lecture: [R Tips](./lectures/week2/r_tips.pdf) (15 min)
+* lady tasting tea (25 min)
 
 _Homework_
 
-* Read syllabus
-* Install R, RStudio
-* Watch [Overview and history of R](https://www.youtube.com/watch?v=kzxHxFHW6hs)
-* Complete the [swirl](http://swirlstats.com/students.html) R Programming course, modules 1-3.
+* Read Chapter 5 of the mosaic [Start Teaching with R](http://cran.r-project.org/web/packages/mosaic/vignettes/V2StartTeaching.pdf) vignette
+* Complete the [swirl](http://swirlstats.com/students.html) R Programming course, modules 4-6.
 
 ```
-1: Basic Building Blocks
-```
-
-```
-2: Sequences of Numbers
+4: Missing Values
 ```
 
 ```
-3: Vectors
+5: Subsetting Vectors
+```
+
+```
+6: Matrices and Data Frames
 ```
