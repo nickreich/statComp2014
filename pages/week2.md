@@ -13,7 +13,7 @@ _Activities_
 
 _Homework_
 
-* Read Chapter 5 of the mosaic [Start Teaching with R](http://cran.r-project.org/web/packages/mosaic/vignettes/V2StartTeaching.pdf) vignette
+* Read Chapters 2 and 5 of the mosaic [Start Teaching with R](http://cran.r-project.org/web/packages/mosaic/vignettes/V2StartTeaching.pdf) vignette
 * Complete the [swirl](http://swirlstats.com/students.html) R Programming course, modules 4-6.
 
 ```
