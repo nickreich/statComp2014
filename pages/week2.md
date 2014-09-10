@@ -8,8 +8,8 @@ tagline: Fall, 2014
 _Activities_
 
 * Quiz (10 min)
-* Lecture: [R Tips](./lectures/week2/r_tips.pdf) (15 min)
-* lady tasting tea (25 min)
+* Lady tasting tea activity (30 min)
+* Lecture: [R Tips](./lectures/week2/r_tips.pdf) (10 min)
 
 _Homework_
 
