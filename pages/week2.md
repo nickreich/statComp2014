@@ -9,7 +9,7 @@ _Activities_
 
 * Quiz (10 min)
 * Lady tasting tea activity (30 min)
-* Lecture: [R Tips](./lectures/week2/r_tips.pdf) (10 min)
+* Lecture: [R Tips](../lectures/week2/r_tips.pdf) (10 min)
 
 _Homework_
 

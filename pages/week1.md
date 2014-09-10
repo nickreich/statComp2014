@@ -8,7 +8,7 @@ tagline: Fall, 2014
 _Activities_
 
 * Welcome, introductions, syllabus hand-out, review course website and course goals (15 min)
-* Lecture: [what is R?](./lectures/week1/WhatIsR.pdf) (20 min)
+* Lecture: [what is R?](../lectures/week1/WhatIsR.pdf) (20 min)
 * swirl demo (15 min)
 
 _Homework_
