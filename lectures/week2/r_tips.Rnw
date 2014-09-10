@@ -1,0 +1,135 @@
+%% template document for beamer slides that use knitr 
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% VERY IMPORTANT NOTE: %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%% every frame that has some knitr in it, must have [fragile] specified, as follows:
+%%        \begin{frame}[fragile]{Multiple linear regression model}
+
+
+
+\documentclass[table]{beamer}
+
+
+\input{statsTeachR_preamble_slides_knitr}
+
+%        The following variables are assumed by the standard preamble:
+
+\title{Tips for working with R}
+
+%	Global variable containing text of authorship acknowledgments and license terms:
+\newcommand{\LicenseText}{These slides were adapted for \href{http://statsteachr.org}{statsTeachR} by Nicholas Reich from the mosaic R package vignette \href{http://cran.r-project.org/web/packages/mosaic/vignettes/V2StartTeaching.pdf}{Start Teaching}. and are released under a \href{http://creativecommons.org/licenses/by-sa/3.0/deed.en_US}{Creative Commons Attribution-ShareAlike 3.0 Unported License}. }
+
+
+\hypersetup{colorlinks,linkcolor=,urlcolor=MainColor}
+
+
+%	******	Document body begins here	**********************
+
+\begin{document}
+
+%	Title page
+\begin{frame}[plain]
+	\titlepage
+\end{frame}
+
+%	******	Everything through the above line must be placed at
+%		the top of any TeX file using the statsTeachR standard
+%		beamer preamble. 
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{frame}[fragile]{Two key questions}
+
+\begin{itemize}
+        \item What do you want R to do? \\ e.g.
+<<eval=FALSE>>=
+mean()
+
+median()
+@
+        
+        \item What must R know to do that?
+        
+        
+\end{itemize}
+
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{frame}[fragile]{R is case-sensitive}
+For example:
+<<>>=
+a <- 1:10
+mean(a)
+Mean(a)
+@
+
+Also, many different syntax/capitalization schemes in different packages, functions, e.g. camelCase, separated.by.dots, nick\_uses\_underscores.
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{frame}[fragile]{R function syntax}
+
+Most (not all!) R functions use the following syntax:
+<<eval=FALSE>>=
+my_function(argument_1, argument_2, ...)
+@
+\begin{itemize}
+\item Arguments surrounded by rounded parentheses
+\item If you type a function name without the parentheses, you will see the code for that function.
+\end{itemize}
+
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{frame}[fragile]{Use TAB completion and arrows!}
+
+\begin{itemize}
+\item If you begin a command and hit the TAB key, R and RStudio will show you a list of possible ways to complete the command. 
+\item If you hit TAB after the opening parenthesis of a function, RStudio will display the list of arguments it expects.
+\item The up and down arrows can be used to retrieve past com- mands when working in the console.
+\end{itemize}
+
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{frame}[fragile]{Recognize errors quickly}
+
+\begin{itemize}
+\item If you see a + prompt, it means R is waiting for more input. Often this means that you have forgotten a closing parenthesis or made some other syntax error. 
+\item If you have messed up and just
+want to get back to the normal prompt, press the escape key and start the command fresh.
+\end{itemize}
+
+\end{frame}
+
+
+
+\end{document}
+

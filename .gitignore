@@ -13,3 +13,12 @@ assets/statComp2014_ReichSyllabus.synctex.gz
 assets/statComp2014_ReichSyllabus.log
 
 index.html
+
+*.log
+*.synctex.gz
+*.toc
+*.vrb
+*.nav
+*.snm
+*concordance.tex
+*.DS_Store

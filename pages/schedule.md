@@ -11,15 +11,16 @@ tagline: Fall, 2014
 *This page is being actively developed and modified. Check back often for updates. 
 -NR, 8/30/2014*
 
-_Skills covered_
+_Skills/topics covered_
 
 * [Week 1: Getting up and running with R](week1.html)
-* Week 2: Data types
+* [Week 2: R tips, coin flips](week2.html)
 * Week 3: Data manipulation 1 (subsetting, reading, writing)
 * Week 4: Data visualization 1
 * Week 5: Control structures
 * Week 6: Vectorized operations, functions
 * Week 7: Probability distribution functions
+* Data types
 * Dates and times
 * Data manipulation 2: dplyr
 * git
