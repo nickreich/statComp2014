@@ -18,7 +18,9 @@ _Due week 4_
 * (Optional, but interesting) Watch [this 30 minute interview with Hadley Wickham](https://www.youtube.com/watch?v=JxwxefRAu70), creator of ggplot2
 * Complete the [swirl](http://swirlstats.com/students.html) R Programming course, modules 9-11.
 ```
-9: Looking at Data           10: Simulation                11: Dates and Times 
+9: Looking at Data           
+10: Simulation                
+11: Dates and Times 
 ```
 
 _Due week 3_
