@@ -38,6 +38,7 @@ The aim of this course is to provide students a foundational training in the mod
 * [PDF syllabus](assets/statComp2014_ReichSyllabus.pdf)
 * [Course Schedule](pages/schedule.html)
 * [Homework](pages/homework.html)
+* [Lectures](pages/lectures.html)
 
 
 ---
