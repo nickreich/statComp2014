@@ -36,7 +36,8 @@ The aim of this course is to provide students a foundational training in the mod
 
 * [Piazza forum](http://piazza.com/umass/fall2014/pubhlth597/home)
 * [PDF syllabus](assets/statComp2014_ReichSyllabus.pdf)
-* [Detailed Course Schedule](pages/schedule.html)
+* [Course Schedule](pages/schedule.html)
+* [Homework](pages/homework.html)
 
 
 ---
