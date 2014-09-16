@@ -17,6 +17,7 @@ _Skills/topics covered_
 * Week 5: Data manipulation: dplyr, tidyr
 * Week 6: Data visualization challenge
 * Week 7: RMarkdown
+* Week 8+ (to come)
 
 <!-- 
 * Probability distribution functions
