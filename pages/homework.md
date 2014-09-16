@@ -4,8 +4,6 @@ title: Homework assignments
 tagline: Fall, 2014
 ---
 
-**Introduction to Statistical Computing with R  (PUBHLTH 597)**   
-**Taught by [Nicholas Reich](http://people.umass.edu/nick), UMass Biostatistics**
 
 
 Unless stated explicitly, the assignments below will not be "collected". However, you should always expect a quiz on the assigned homework. 

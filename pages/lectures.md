@@ -4,10 +4,6 @@ title: Lectures
 tagline: Fall, 2014
 ---
 
-**Introduction to Statistical Computing with R  (PUBHLTH 597)**   
-**Taught by [Nicholas Reich](http://people.umass.edu/nick), UMass Biostatistics**
-
-
 
 Week 1: [what is R?](../lectures/week1/WhatIsR.pdf) 
 
