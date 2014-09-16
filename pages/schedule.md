@@ -13,8 +13,8 @@ tagline: Fall, 2014
 
 _Skills/topics covered_
 
-* [Week 1: Getting up and running with R](week1.html)
-* [Week 2: R tips, coin flips](week2.html)
+* Week 1: Getting up and running with R
+* Week 2: R tips, coin flips
 * Week 3: Data types, reading data, using RStudio
 * Week 4: Data visualization: ggplot2
 * Week 5: Data manipulation: dplyr, tidyr
