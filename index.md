@@ -27,14 +27,10 @@ The aim of this course is to provide students a foundational training in the mod
 
 **Suggested books** 
 
-&nbsp; &nbsp; N Matloff. (2011) _[Art of R Programming : A Tour of Statistical Software Design](http://www.nostarch.com/artofr.htm)_ [ebook [available online via UMass library](http://silk.library.umass.edu/login?url=http://site.ebrary.com/lib/umassa/Top?id=10513550)]
-
-&nbsp; &nbsp; H Wickham. (2014) _[Advanced R](http://adv-r.had.co.nz/)_
-
-&nbsp; &nbsp; H Wickham. (2009) _[ggplot2: Elegant Graphics for Data Analysis](http://www.amazon.com/ggplot2-Elegant-Graphics-Data-Analysis/dp/0387981403/)_ [pdf available via UMass library]
-
+&nbsp; &nbsp; N Matloff. (2011) _[Art of R Programming : A Tour of Statistical Software Design](http://www.nostarch.com/artofr.htm)_ [ebook [available online via UMass library](http://silk.library.umass.edu/login?url=http://site.ebrary.com/lib/umassa/Top?id=10513550)] <br>
+&nbsp; &nbsp; H Wickham. (2014) _[Advanced R](http://adv-r.had.co.nz/)_<br>
+&nbsp; &nbsp; H Wickham. (2009) _[ggplot2: Elegant Graphics for Data Analysis](http://www.amazon.com/ggplot2-Elegant-Graphics-Data-Analysis/dp/0387981403/)_ [pdf available via UMass library]<br>
 &nbsp; &nbsp; Y Xie. (2013) _[Dynamic documents with R and knitr](http://www.amazon.com/exec/obidos/ASIN/1482203537/7210-20)_<br>
-
 &nbsp; &nbsp; P Daalgard. (2008) Introductory Statistics with R, 2nd edition. [free download via UMass library]  
 
 **Online course resources**
