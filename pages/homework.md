@@ -12,7 +12,7 @@ _Due week 4_
 
 * Install ggplot2 package
 * Read [A Simple Introduction to the Graphing Philosophy of ggplot2](http://tomhopper.me/2014/03/28/a-simple-introduction-to-the-graphing-philosophy-of-ggplot2/)
-* (If you need more info on data types) Watch [this 30 minute video](https://www.youtube.com/watch?v=5AQM-yUX9zg&index=6&list=PLjTlxb-wKvXNSDfcKPFH2gzHGyjpeCZmJ)
+* (If you need more info on data types) Watch [this 30 minute video](https://www.youtube.com/watch?v=5AQM-yUX9zg&index=6&list=PLjTlxb-wKvXNSDfcKPFH2gzHGyjpeCZmJ) and/or read and review Chapters 1-6 of Matloff. 
 * (Optional, but interesting) Watch [this 30 minute interview with Hadley Wickham](https://www.youtube.com/watch?v=JxwxefRAu70), creator of ggplot2
 * Complete the [swirl](http://swirlstats.com/students.html) R Programming course, modules 9-11.
 ```
