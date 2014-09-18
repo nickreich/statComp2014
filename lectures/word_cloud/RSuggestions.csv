@@ -1,0 +1,54 @@
+"Shiny
+ggplot 2
+lapply","Shiny
+ggplot2
+lapply"
+How to be able to do things with my data as easily as I could with Excel or SigmaPlot,cross-platform
+"data frames; data display (e.g. plotting with R &/or ggplot2 package)
+other useful packages for basic data manipulation","ggplot2
+graphics
+data manipulation"
+"I would like to learn more about graphing on R. The youtube video seemed to imply that it could graph well and SAS is a bit of a bear with it, so I would like another option to graph.",graphics
+How to work with data basis on R.,databases
+Graphing data,graphics
+"linear regression, ANOVA, t-test,","linear regression
+ANOVA
+ttest"
+"More applicable computing language with R
+Some models we will use by R","applicability
+models"
+"manipulating data formats within R (transforming, adding columns, shaping data to formats that can be easily plotted). refreshing different plotting techniques/packages.","data manipulation
+graphics"
+"Graphing, if loops","graphics
+if else
+for loops"
+I want to learn how to deal with tons of data and find out the useful information that I need. Thanks. Prof. Reich.,big data
+"Taking a data set and manipulating it so that it is set up in a manner that is easy to work with when you actually go to run stats on it
+Subsetting data efficiently","data manipulation
+subsets"
+"I would like to learn more about how to analysis data using R, like how to draw plots.","graphics
+analysis"
+How to apply different statistical packages in R.,packages
+exploratory data analysis,analysis
+How to publish my data in git as a way to communicate with other scientists,"GitHub
+publish"
+"-making tables and graphs
+-performing chi-square test, t-tests, etc
+-creating and uploading a data set from exel into R","graphics
+chi square
+ttest
+cross-platform"
+"1. Learn how to gather and clean data from a variety of sources. (Getting and cleaning data)
+2. Learn the essential exploratory techniques for summarizing data. (Data analysis)
+3.Learn how to draw conclusions about populations or scientific truths from data.","cleaning
+analysis"
+"Code organization
+Modularization
+Plotting","cleaning
+modularization
+graphics"
+Ways to apply R methods to analyze specific medical-related data or problems.,biostatistics
+I want to learn more about the rules of R. I'm interested in the connection and difference between S and R.,S
+"How to import data set from web URL.
+And, understanding the logic behind coding and its manipulations on the working directory.","import
+cross-platform"
