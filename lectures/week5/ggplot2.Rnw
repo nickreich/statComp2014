@@ -87,7 +87,7 @@ plot(NHANES$weight, NHANES$height)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-\begin{frame}[fragile]{Graphics in R: {\tt ggplot2}}
+\begin{frame}[fragile]{A simple {\tt ggplot2} graphic}
 
 <<ggplot2_simple_example, cache=TRUE, fig.height=3.5>>=
 library(ggplot2)
@@ -99,7 +99,7 @@ qplot(weight, height, data=NHANES)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-\begin{frame}[fragile]{Graphics in R: {\tt lattice}}
+\begin{frame}[fragile]{A simple {\tt lattice} graphic}
 
 <<lattice_simple_example, cache=TRUE, fig.height=4>>=
 library(lattice)
@@ -111,14 +111,28 @@ xyplot(height ~ weight, data=NHANES)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-\begin{frame}[fragile]{{\tt mosaic} package can translate between them}
+\begin{frame}[fragile]{The {\tt mosaic} package can translate between them}
 
 <<mplot, eval=FALSE>>=
 library(mosaic)
 mplot(NHANES)
 @
 
+{\tt mplot()} loads a very nice graphical user interface for creating graphics, and spits out the code for ggplot or lattice graphics. 
+
+Try it out! Practice saving a graphic from RStudio.
+
 \end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{frame}[fragile]{Why I use {\tt ggplot2}}
+
+
+\end{frame}
+
+
 
 \end{document}
 
