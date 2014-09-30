@@ -12,8 +12,12 @@ _Due week 8_
 
 * Install and complete the "Getting and Cleaning Data" course (four modules) from swirl. To install the course, you can run the following commands in R:
 ```
-library(swirl) \\ 
-install_from_swirl("Getting_and_Cleaning_Data") \\ 
+library(swirl) 
+```
+```
+install_from_swirl("Getting_and_Cleaning_Data") 
+```
+```
 swirl()
 ```
 
