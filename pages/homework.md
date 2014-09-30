@@ -24,6 +24,7 @@ swirl()
 _Due week 7_
 
 * Find a dataset that you are excited about exploring. Write a paragraph summary of what the dataset is. You do not need to hand this in, yet...
+* Watch [Principles of Graphics video](https://www.youtube.com/watch?v=6lOvA_y7p7w)
 -->
 
 _Due week 6_
