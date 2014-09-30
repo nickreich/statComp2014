@@ -11,6 +11,7 @@ Unless stated explicitly, the assignments below will not be "collected". However
 _Due week 8_
 
 * Install and complete the "Getting and Cleaning Data" course (four modules) from swirl. To install the course, you can run the following commands in R:
+
 ```
 library(swirl) 
 ```
