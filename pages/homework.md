@@ -8,6 +8,30 @@ tagline: Fall, 2014
 
 Unless stated explicitly, the assignments below will not be "collected". However, you should always expect a quiz on the assigned homework. 
 
+_Due week 8_
+
+* Install and complete the "Getting and Cleaning Data" course (four modules) from swirl. To install the course, you can run the following commands in R:
+```
+library(swirl)
+install_from_swirl("Getting_and_Cleaning_Data")
+swirl()
+```
+<!--
+* Use your dataset from the previous week and create an RMarkdown writeup about your dataset. Include the description that you wrote from the previous week's assignment, and also include some descriptive statistics calculated in your document, as well as two figures that illustrate key features of your dataset.
+
+
+
+_Due week 7_
+
+* Find a dataset that you are excited about exploring. Write a paragraph summary of what the dataset is. You do not need to hand this in, yet...
+-->
+
+_Due week 6_
+
+* Watch [the five ggplot2 videos at this playlist](https://www.youtube.com/playlist?list=PLjTlxb-wKvXPhZ7tQwlROtFjorSj9tUyZ)
+* Read Framingham Heart Study dataset documentation
+* Download the FHS dataset (instructions will be received via email), make a data graphic of your choosing from this dataset. Post the graphic on Piazza by Monday afternoon (Oct 6th) at 5pm.
+
 _Due week 4_
 
 * Install ggplot2 package

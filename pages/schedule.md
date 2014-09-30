@@ -6,18 +6,19 @@ tagline: Fall, 2014
 
 
 *This page is being actively developed and modified. Check back often for updates. 
--NR, 8/30/2014*
+-NR, 9/30/2014*
 
 _Skills/topics covered_
 
 * Week 1: Getting up and running with R
 * Week 2: R tips, coin flips
 * Week 3: Data types, reading data, using RStudio
-* Week 4: Data visualization: ggplot2
-* Week 5: Data manipulation: dplyr, tidyr
+* Week 4: cancelled
+* Week 5: Data visualization: ggplot2
 * Week 6: Data visualization challenge
 * Week 7: RMarkdown
-* Week 8+ (to come)
+* Week 8: Data manipulation: dplyr, tidyr
+* Week 9+ (to come)
 
 <!-- 
 * Probability distribution functions
