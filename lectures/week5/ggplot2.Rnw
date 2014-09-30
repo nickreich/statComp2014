@@ -1,0 +1,124 @@
+%% template document for beamer slides that use knitr 
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% VERY IMPORTANT NOTE: %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%% every frame that has some knitr in it, must have [fragile] specified, as follows:
+%%        \begin{frame}[fragile]{Multiple linear regression model}
+
+
+
+\documentclass[table]{beamer}
+
+
+\input{../preambles/statsTeachR_preamble_slides_knitr}
+
+%        The following variables are assumed by the standard preamble:
+
+\title{Graphics in R: {\tt ggplot2}}
+
+%	Global variable containing text of authorship acknowledgments and license terms:
+\newcommand{\LicenseText}{These slides were created for \href{http://statsteachr.org}{statsTeachR} by Nicholas Reich and are released under a \href{http://creativecommons.org/licenses/by-sa/3.0/deed.en_US}{Creative Commons Attribution-ShareAlike 3.0 Unported License}. }
+
+
+\hypersetup{colorlinks,linkcolor=,urlcolor=MainColor}
+
+
+%	******	Document body begins here	**********************
+
+\begin{document}
+
+%	Title page
+\begin{frame}[plain]
+	\titlepage
+\end{frame}
+
+%	******	Everything through the above line must be placed at
+%		the top of any TeX file using the statsTeachR standard
+%		beamer preamble. 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{frame}[fragile]{Let there be data....}
+\scriptsize
+<<load_data>>=
+library(NHANES)
+str(NHANES)
+@
+
+
+\end{frame}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{frame}[fragile]{Graphics in R}
+
+You have three central choices for making graphics in R
+\begin{itemize}
+        \item ``Base graphics''
+        \item ggplot2
+        \item lattice
+\end{itemize}
+
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{frame}[fragile]{Graphics in R: Base graphics}
+
+<<base_graphics, cache=TRUE, fig.height=4>>=
+plot(NHANES$weight, NHANES$height)
+@
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{frame}[fragile]{Graphics in R: {\tt ggplot2}}
+
+<<ggplot2_simple_example, cache=TRUE, fig.height=3.5>>=
+library(ggplot2)
+qplot(weight, height, data=NHANES)
+@
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{frame}[fragile]{Graphics in R: {\tt lattice}}
+
+<<lattice_simple_example, cache=TRUE, fig.height=4>>=
+library(lattice)
+xyplot(height ~ weight, data=NHANES) 
+@
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{frame}[fragile]{{\tt mosaic} package can translate between them}
+
+<<mplot, eval=FALSE>>=
+library(mosaic)
+mplot(NHANES)
+@
+
+\end{frame}
+
+\end{document}
+
