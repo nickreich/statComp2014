@@ -1,0 +1,25 @@
+---
+title: "UMass Statistical Computing in R: Week 6 lab"
+author: "Nicholas G Reich"
+date: "8 October 2014"
+output: 
+  html_document:
+    fig_height: 3
+    fig_width: 5
+  pdf_document:
+    fig_height: 3
+    fig_width: 5
+  word_document:
+    fig_height: 3
+    fig_width: 5
+---
+
+
+
+## Create a data visualization
+For today's class, you will work on creating a data visualization with a teammate. You will use the Framingham Heart Study (FHS) dataset provided to you via Piazza. Please note: this dataset was provided to us by the Framingham Heart Study for educational purposes. It is not a public dataset, nor is the data publishable, as FHS has made some alterations to the data.
+
+By 2pm, you should have posted a final version of your data graphic on Piazza, along with the code you used to create it. A few of them will be chosen and discussed by the whole class.
+
+
+
