@@ -17,7 +17,7 @@ The aim of this course is to provide students a foundational training in the mod
 
 **Instructor**: [Nicholas Reich](http://people.umass.edu/nick)
 
-<!--**Office hours**: Wed 9&ndash;10-->
+**Office hours**: Tues 1&ndash;2
 
 **Prerequisite**: None.
 
