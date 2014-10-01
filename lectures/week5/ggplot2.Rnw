@@ -89,7 +89,7 @@ plot(NHANES$weight, NHANES$height)
 
 \begin{frame}[fragile]{A simple {\tt ggplot2} graphic}
 
-<<ggplot2_simple_example, cache=TRUE, fig.height=3.5>>=
+<<ggplot2_simple_example, cache=TRUE, fig.height=3.5, message=FALSE, warning=FALSE>>=
 library(ggplot2)
 qplot(weight, height, data=NHANES)
 @
@@ -236,11 +236,13 @@ For more info check out the documentation: \href{http://docs.ggplot2.org/current
 
 \begin{frame}[fragile]{What are ``aesthetics''?}
 
-Aesthetics define a mapping between data and the display.
+Aesthetics define a mapping between data and the display.\footnote{Figure credits: \href{http://ggplot2.org/resources/2007-vanderbilt.pdf}{Hadley Wickham}}
 
 \begin{figure}[t]
 \includegraphics[width=4in]{aes.png}
 \end{figure}
+
+
 
 \end{frame}
 
