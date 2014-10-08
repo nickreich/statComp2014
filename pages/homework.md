@@ -27,11 +27,13 @@ swirl()
 <!--
 * Use your dataset from the previous week and create an RMarkdown writeup about your dataset. Include the description that you wrote from the previous week's assignment, and also include some descriptive statistics calculated in your document, as well as two figures that illustrate key features of your dataset.
 
+-->
+
 _Due week 7_
 
-* Find a dataset that you are excited about exploring. Write a paragraph summary of what the dataset is. You do not need to hand this in, yet...
+* Find a dataset that you are excited about exploring. Some nice options are available from [the Vanderbilt data website](http://biostat.mc.vanderbilt.edu/wiki/Main/DataSets) or [the UCI Machine Learning Repository](http://archive.ics.uci.edu/ml/). Write a paragraph summary of what the dataset is. You do not need to hand this in, yet...
+* Read [this blog post](http://blog.rstudio.org/2014/06/18/r-markdown-v2/) and watch the video on R Markdown that is embedded in the post.
 * Watch [Principles of Graphics video](https://www.youtube.com/watch?v=6lOvA_y7p7w)
--->
 
 _Due week 6_
 
