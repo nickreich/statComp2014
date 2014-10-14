@@ -24,10 +24,8 @@ install_from_swirl("Getting_and_Cleaning_Data")
 swirl()
 ```
 
-<!--
 * Use your dataset from the previous week and create an RMarkdown writeup about your dataset. Include the description that you wrote from the previous week's assignment, and also include some descriptive statistics calculated in your document, as well as two figures that illustrate key features of your dataset.
 
--->
 
 _Due week 7_
 
