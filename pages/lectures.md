@@ -11,6 +11,6 @@ Week 2: [R Tips](../lectures/week2/r_tips.pdf)
 
 Week 5: [Graphics in R: ggplot2](../lectures/week5/ggplot2.pdf)
 
-Week 8: [RMarkdown](../lectures/week8/week8_rmarkdown.Rpres)
+Week 7: [RMarkdown](../lectures/week7/week7_rmarkdown.Rpres)
 
 
