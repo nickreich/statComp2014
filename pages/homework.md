@@ -10,6 +10,13 @@ Unless stated explicitly, the assignments below will not be "collected". However
 
 <!-- Please select a blog entry that you'd like to present (briefly) on Wednesday, October 8th.  These should be from 2013 or later and relate to statistics, data science, or R. See http://simplystatistics.org, http://www.statsblogs.com, http://r-bloggers.com, http://fivethirtyeight.com, or http://www.statschat.org.nz for examples. Please submit your choice on Moodle by midnight on Monday.  The presentations will be no more than 90 seconds long and should provide a brief summary of the entry, why you found it interesting, and what question you have after reading it. -->
 
+_Due week 9_
+* Read Hadley Wickham's [paper on tidy data](http://vita.had.co.nz/papers/tidy-data.pdf).
+* Read Chapter 7.1 "Control Statements" in Matloff. This provides an introduction to for and while loops, and also if/then statements in R.
+* Add the following two components to your writeup that you began last week:
+ * A discussion of whether your dataset is "tidy" or not. Define the variables (only the key ones of them if you have a lot in your dataset), and label the variables as fixed or measured. Also define what an "observation" means in the context of your dataset. Discuss what, if any, of the rules of tidy data are violated in your dataset.
+ * A timed comparison of different ways to create a new column in your dataset. You should use [this script](../scripts/new-column-script.R) as a starting point for the code to insert into your writeup. The main idea here is to compare the time it takes to create a new column using mutate(), versus using a vectorized calculation not in mutate, versus a for loop to create each item separately.
+
 _Due week 8_
 
 * Install and complete the "Getting and Cleaning Data" course (four modules) from swirl. To install the course, you can run the following commands in R:
