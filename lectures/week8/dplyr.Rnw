@@ -18,7 +18,7 @@
 
 %        The following variables are assumed by the standard preamble:
 
-\title{Graphics in R: {\tt ggplot2}}
+\title{Data manipulation in R: {\tt dplyr} and {\tt tidyr}}
 
 %	Global variable containing text of authorship acknowledgments and license terms:
 \newcommand{\LicenseText}{These slides were created for \href{http://statsteachr.org}{statsTeachR} by Nicholas Reich and are released under a \href{http://creativecommons.org/licenses/by-sa/3.0/deed.en_US}{Creative Commons Attribution-ShareAlike 3.0 Unported License}. }
@@ -44,54 +44,21 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-\begin{frame}[fragile]{Let there be data....}
+\begin{frame}[fragile]{What are characteristics of tidy data}
+
+
+\end{frame}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{frame}[fragile]{Is UKDriverDeaths tidy?}
 \scriptsize
-<<load_data>>=
-library(NHANES)
-str(NHANES)
-@
-
-
-\end{frame}
-
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-\begin{frame}[fragile]{Graphics in R}
-
-You have three central choices for making graphics in R
-\begin{itemize}
-        \item ``Base graphics''
-        \item ggplot2
-        \item lattice
-\end{itemize}
-
-
-\end{frame}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-\begin{frame}[fragile]{Graphics in R: Base graphics}
-
-<<base_graphics, cache=TRUE, fig.height=4>>=
-plot(NHANES$weight, NHANES$height)
-@
-
-\end{frame}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-\begin{frame}[fragile]{A simple {\tt ggplot2} graphic}
-
-<<ggplot2_simple_example, cache=TRUE, fig.height=3.5, message=FALSE, warning=FALSE>>=
-library(ggplot2)
-qplot(weight, height, data=NHANES)
+<<load_data, message=FALSE>>=
+UKDriverDeaths
 @
 
 \end{frame}
@@ -99,264 +66,25 @@ qplot(weight, height, data=NHANES)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-\begin{frame}[fragile]{A simple {\tt lattice} graphic}
-
-<<lattice_simple_example, cache=TRUE, fig.height=4>>=
-library(lattice)
-xyplot(height ~ weight, data=NHANES) 
-@
-
-\end{frame}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-\begin{frame}[fragile]{The {\tt mosaic} package can translate between them}
-
-<<mplot, eval=FALSE>>=
-library(mosaic)
-mplot(NHANES)
-@
-
-{\tt mplot()} loads a very nice graphical user interface for creating graphics, and spits out the code for ggplot or lattice graphics. 
-
-Try it out! Practice saving a graphic from RStudio.
-
-\end{frame}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-\begin{frame}[fragile]{Why I use {\tt ggplot2}}
-
-\begin{itemize}
-\item ``easy'' to create both simple and complex graphics
-\item unified syntax
-\item attractive defaults (except for colors)
-\item actively developed and improved
-\end{itemize}
-
-\end{frame}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-\begin{frame}[fragile]{Quick tour of {\tt ggplot2} syntax}
-
-
-<<ggplot2_syntax1, cache=TRUE, eval=TRUE, message=FALSE, warning=FALSE, fig.height=3.5>>=
-## defaults to scatterplot
-qplot(weight, height, data=NHANES) 
-@
-\end{frame}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-\begin{frame}[fragile]{Quick tour of {\tt ggplot2} syntax}
-
-
-<<ggplot2_syntax2, cache=TRUE, eval=TRUE, message=FALSE, warning=FALSE, fig.height=3.5>>=
-## same as default
-qplot(weight, height, data=NHANES, geom="point") 
-@
-\end{frame}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-\begin{frame}[fragile]{Quick tour of {\tt ggplot2} syntax}
-
-
-<<ggplot2_syntax3, cache=TRUE, eval=TRUE, message=FALSE, warning=FALSE, fig.height=3.5>>=
-qplot(weight, height, data=NHANES, geom="smooth") 
-@
-\end{frame}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-\begin{frame}[fragile]{Quick tour of {\tt ggplot2} syntax}
-
-
-<<ggplot2_syntax4, cache=TRUE, eval=TRUE, message=FALSE, warning=FALSE, fig.height=3.5>>=
-qplot(weight, height, data=NHANES, 
-      geom=c("smooth", "point")) 
-@
-\end{frame}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-\begin{frame}[fragile]{Quick tour of {\tt ggplot2} syntax}
-
-
-<<ggplot2_syntax5, cache=TRUE, eval=TRUE, message=FALSE, warning=FALSE, fig.height=3.5>>=
-qplot(weight, height, data=NHANES, 
-      geom=c("smooth", "point"), alpha=I(.01)) 
-@
-\end{frame}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-\begin{frame}[fragile]{{\tt ggplot2}  building blocks}
-
-The grammar ...
-\begin{itemize}
-\item geom 
-\item aesthetics ({\tt aes})
-\item scales
-\item facets
-\item data
-\item ... and more here: \href{http://docs.ggplot2.org/current/}{http://docs.ggplot2.org/current/}
-\end{itemize}
-
-
-\end{frame}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-\begin{frame}[fragile]{What is a ``geom''?}
-
-From \href{http://ggplot2.org/resources/2007-vanderbilt.pdf}{Hadley}:
-\begin{itemize}
-\item Geoms define the basic ``shape'' of the elements on the plot
-\item Basics: point, line, bar, text, hline, vline
-\item Statistics: histogram, smooth, density
-\item Others: boxplot, pointrange, linerange, ribbon
-\end{itemize}
-
-For more info check out the documentation: \href{http://docs.ggplot2.org/current/}{http://docs.ggplot2.org/current/}.
-
-\end{frame}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\begin{frame}[fragile]{What are ``aesthetics''?}
-
-Aesthetics define a mapping between data and the display.\footnote{Figure credits: \href{http://ggplot2.org/resources/2007-vanderbilt.pdf}{Hadley Wickham}}
-
-\begin{figure}[t]
-\includegraphics[width=4in]{aes.png}
-\end{figure}
-
-
-
-\end{frame}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-\begin{frame}[fragile]{Thinking about aesthetics}
-
-Each geom has a different set of aesthetics.
-
-What aesthetics might we need for {\tt geom\_point}?
-
-\end{frame}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-\begin{frame}[fragile]{Aesthetics for geom\_point}
-
-{\tt geom\_point} understands the following aesthetics
-
-\begin{itemize}
-\item x (required)
-\item y (required)
-\item alpha
-\item color
-\item fill
-\item shape
-\item size
-\end{itemize}
-
-\end{frame}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-\begin{frame}[fragile]{Aesthetics for {\tt geom\_line}}
-
-What aesthetics might we need for {\tt geom\_line}?
-
-\uncover<2-2>{
-\begin{itemize}
-\item x (required)
-\item y (required)
-\item alpha
-\item color
-\item linetype
-\item size
-\end{itemize}
-}
-\end{frame}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-\begin{frame}[fragile]{A more involved example}
-
-<<ggplot2_syntax6, cache=TRUE, eval=TRUE, message=FALSE, warning=FALSE, fig.height=3.5>>=
-qplot(weight, height, data=NHANES, 
-      geom="smooth", se=FALSE,
-      color=ethnicity,
-      facets=.~sex) 
-@
-
-
-\end{frame}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-\begin{frame}[fragile]{{\tt qplot()} vs {\tt ggplot}}
-
+\begin{frame}[fragile]{Is HairEyeColor tidy?}
 \scriptsize
-<<qplot_syntax, eval=FALSE>>=
-qplot(weight, height, data=NHANES, 
-      geom="smooth", se=FALSE,
-      color=ethnicity,
-      facets=.~sex) 
+<<load_data2, message=FALSE>>=
+HairEyeColor
 @
 
-<<ggplot_syntax, eval=FALSE>>=
-ggplot(NHANES) +
-        geom_smooth(aes(x=weight, y=height, color=ethnicity), se=FALSE) +
-        geom_point(aes(x=weight, y=height, color=ethnicity), alpha=I(.01)) +
-        facet_grid(.~sex)
-@
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+
+\begin{frame}[fragile]{Is sleep tidy?}
+\scriptsize
+<<load_data3, message=FALSE>>=
+head(sleep, 15)
+@
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-\begin{frame}[fragile]{How to get help with ggplot}
-
-\begin{itemize}
-\item Ask Google: "ggplot [what I'm trying to do]"
-\item Ask your classmates/instructors on Piazza!
-\item Post something on \href{http://stats.stackexchange.com/questions/tagged/ggplot2}{stackexchange} or the \href{https://groups.google.com/forum/?fromgroups#!forum/ggplot2}{ggplot2 mailing list}
-\item Read more!
-\begin{itemize}
-\item \href{http://ggplot2.org/}{http://ggplot2.org/}
-\item \href{http://www.cookbook-r.com/Graphs/}{Cookbook for R}
-\item \href{http://www.amazon.com/ggplot2-Elegant-Graphics-Data-Analysis/dp/0387981403/}{Hadley's book}
-\end{itemize}
-
-\item Practice, practice, practice.
-\end{itemize}
-
-\end{frame}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \end{document}
 
