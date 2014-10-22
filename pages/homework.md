@@ -8,6 +8,8 @@ tagline: Fall, 2014
 
 Unless stated explicitly, the assignments below will not be "collected". However, you should always expect a quiz on the assigned homework. 
 
+<!-- Please select a blog entry that you'd like to present (briefly) on Wednesday, October 8th.  These should be from 2013 or later and relate to statistics, data science, or R. See http://simplystatistics.org, http://www.statsblogs.com, http://r-bloggers.com, http://fivethirtyeight.com, or http://www.statschat.org.nz for examples. Please submit your choice on Moodle by midnight on Monday.  The presentations will be no more than 90 seconds long and should provide a brief summary of the entry, why you found it interesting, and what question you have after reading it. -->
+
 _Due week 8_
 
 * Install and complete the "Getting and Cleaning Data" course (four modules) from swirl. To install the course, you can run the following commands in R:
