@@ -1,0 +1,216 @@
+Reproducibility
+========================================================
+author: Steele H. Valenzuela
+date: October 15th, 2014
+
+Objective
+========================================================
+
+1. The dreaded quiz (http://tinyurl.com/knzohe6)
+2. Brief discussion over *REPRODUCIBILITY*
+3. Dynamic documents w/ RMarkdown
+4. Questions & Homework
+
+
+Reproducibility
+========================================================
+First, Biostatistics Ryan Gosling! 
+![The Return of Biostatistics Ryan Gosling][id]
+
+[id]: http://41.media.tumblr.com/tumblr_m6d7gv36eh1rzm4u4o1_500.jpg "Biostatistics Ryan Gosling"
+
+
+Reproducibility - Definition
+========================================================
+
+When creating reproducible research, it requires us to document approaches used to **process**, **manage**, **analyze**, and **visualize data**.
+
+> Reproducible research has been defined in the scientific community as published scientific work that can be recreated using code and data made available by the authors
+
+Authors must have a foundational understanding of the uncertainty that underlies the statistical model they use to describe their data.
+
+
+Reproducibility - History
+========================================================
+
+The concept of literate programming by Donald Knuth established the roots of reproducible research.
+
+Friederic Lisch pioneered the concept in 2002 with Sweave, which allows users to weave together R code and natural language descriptions.
+
+Statisticians Baggerly and Coombes, found flaws by researchers at Duke University who were conducting cancer trials.
+
+Thomas Herndon, grad student from UMass, exposed flaws in a widely cited economics paper written by two Harvard professors.
+
+
+
+Reproducibility
+========================================================
+
+Has anyone attempted to reproduce (odd wording, I know):
+  * a paper?
+  * analyses?
+  * methods?
+  * ...?
+
+
+Reproducibility - Beating a dead horse
+========================================================
+
+From the blog [Simply Statistics][id], we need 3 components:
+
+  1. Availability of **raw data**
+  2. Statistical code and documentation 
+  3. Data analysis must be *correct*
+
+Does anything else come to mind?
+
+[id]: http://simplystatistics.org/2014/09/30/you-think-p-values-are-bad-i-say-show-me-the-data/
+
+
+Reproducibility - Tools
+========================================================
+
+* R/RStudio
+* ggplot2
+* Dynamic Documents: knitr, RMarkdown, Sweave
+* Version control: git and github.com
+
+
+RMarkdown - Introduction
+========================================================
+
+Yihui Xie is a super star, like Hadley Wickham (they both work for R). At 4:53 of the [video][id], he says:
+
+> In Markdown, you write like a normal human language. 
+
+R Markdown allows you to write dynamic documents and reports, combining:
+* text, R code, R output, tables, and figures
+
+Lastly, when analysis changes, results also change. 
+
+Why is this important?
+
+[id]: http://blog.rstudio.org/2014/06/18/r-markdown-v2/#comment-17840
+
+
+
+RMarkdown - Introduction
+========================================================
+
+RMarkdown comes bundled with RStudio. 
+
+To access:
+
+> *File* -> *New File* -> *R Markdown...* -> *Insert Title* -> *OK*
+
+Other options include Presentations, Templates, and Shiny.
+
+
+RMarkdown
+========================================================
+
+Originally, we could only output a HTML document.
+
+Now, with version 2, we can produce the following outputs:
+
+Document formats | Presentation formats
+---------------- | -------------------
+HTML             | Beamer
+PDF              | ioslides
+Word             | Slidy
+Markdown         | 
+Tufte Handout (see templates) | 
+
+
+RMarkdown - Class Exercise
+========================================================
+
+Let's use your data set and your paragraph summary.
+
+1. Delete everything below the 7th line of code
+2. Load data set from homework
+3. Load appropriate packages (ggplot2)
+3. Insert paragraph summary
+4. Load two graphics (summary, qplot, anything...)
+5. Use one example of **Inline R Code**
+6. If time permits, alter the theme
+
+
+
+RMarkdown - Inline R Code
+========================================================
+
+For customizing plots, basic options include
+  * `{r, [insert chunk name here], ...}` 
+  * `eval = `
+  * `echo = `
+  * `fig.width = `
+  * `fig.height = `
+  * `message = `
+  * Imaginary extra credit for those that can get 2 plots side-by-side (w/o using facet_grid)
+  
+If you get lost or confused, hit the **tab** key. 
+  
+
+RMarkdown - Additional Options
+========================================================
+
+If one would like to change the appearance and style, try this example:
+  
+> ```
+>    output: 
+>      html_document:
+>        theme: cerulean
+>        highlight: espresso
+> ```
+
+Other options include table of contents, or `toc: `, bibliographies, citations, and many more.
+
+
+Questions
+========================================================
+
+For further questions, tips, hints, etc., check out the R Markdown [website][id.1], linked here. As Yihui recommends, keep it:
+
+> Simple. Simple. Simple.
+
+Questions?
+
+Also, Biostatistics Ryan Gosling is [here!][id.2]
+
+Note: some slides were adapted from Nick Reich & Yihui Xie. 
+
+[id.1]: rmarkdown.rstudio.com
+[id.2]: http://biostatisticsryangoslingreturns.tumblr.com/
+
+
+Overview
+========================================================
+
+Today, we covered:
+
+* Quiz
+* History and importance of Reproducibility 
+  * Biostatistics Ryan Gosling
+* RMarkdown
+  * Basic foundation
+  * Exercise
+  
+**Next week's homework, Week 8, covers swirl() and extends today's project.**
+
+  
+  
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
