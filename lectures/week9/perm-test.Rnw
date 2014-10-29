@@ -288,8 +288,40 @@ summary(mod2)$coefficients
 \end{frame}
 
 
+\begin{frame}[fragile]{Permutation test results (1000 simulations)}
 
 
+<<run_sim, echo=FALSE, fig.height=4, message=FALSE>>=
+heights <- heights[sample(200),]
+nSim <- 1000 ## number of permutations
+## fit initial model and create storage file
+realDataModel <- lm(Dheight ~ Mheight, data=heights)
+realData_beta1 <- coef(realDataModel)[2]
+
+## create storage matrix
+mat <- matrix(NA, nrow=nSim, ncol=2)
+colnames(mat) <- c("b0", "b1")
+
+## run permutation loop, storing each time
+for(i in 1:nSim) { 
+        permDhts <- sample(heights$Dheight, replace=FALSE)
+        mdl <- lm(permDhts ~ heights$Mheight)
+        mat[i,] <- coef(mdl)
+}
+qplot(mat[,"b1"]) + geom_vline(xintercept = realData_beta1, color="red") + xlab(expression(beta[1]))
+pval <- sum(abs(mat[,"b1"]) > realData_beta1)/nrow(mat)
+@
+Now that we have our distribution of $\beta_1$ under the null hypothesis, we can compare the estimate of $\beta_1$ from the real data analysis. Notice that we calculate a two-sided p-value by calculating how many $|\hat\beta_1^{(i)}| > \beta_1$. 
+The resulting p-value is \Sexpr{round(pval, 3)}.
+
+\end{frame}
+
+
+\begin{frame}[fragile]{}
+
+Homework: do this on your own!
+
+\end{frame}
 
 
 \end{document}
