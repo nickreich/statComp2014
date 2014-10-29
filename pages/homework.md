@@ -16,9 +16,9 @@ _Due week 10_
 * Complete two modules from the `swirl` R Programming course:
 ```7: lapply and sapply          8: vapply and tapply```
 * Submit a "final" version of your writeup via piazza. A few specific requirements:
-   + Submit a pdf file, no more than 5 pages.
+   + Submit a pdf file, no more than 4 pages.
    + Be sure to include your name and the date on the first page of the report.
-   + Keep the report succinct. Remove unnecessary messages and output from the report using the `echo=FALSE`, `warnings=FALSE`, and/or `messages=FALSE` options in your code chunks. Do show code that you run and packages that you load (if any).
+   + Keep the report succinct. Remove unnecessary messages and output from the report using the `echo=FALSE`, `warnings=FALSE`, and/or `messages=FALSE` options in your code chunks. Do show packages that you load (if any) and enough of your code so that someone could reproduce your analysis. 
    + Keep tidy section headers, you should have at least three sections, entitled "Introduction", "Data Analysis" (including your discussion of tidy data, data visualizations, and summary statistics), and "Permutation Test" (see below).
    + Run a permutation test on one aspect of your data. It does not necessarily need to be a linear regression as shown in class. You could examine correlation between two variables, a regression coefficient, a contingency table association, or another method of your choosing. You are welcome to post a question to instructors on Piazza about the suitability of your test, although this is not required. The primary goal here is to gain experience running a simulation, although your statistical test must be appropriate for your data (i.e. no linear regressions on a binary outcome variable and no calculating correlations on binary data). Your report should show (1) the code you used to run the simulation, (2) a graphic showing the distribution of permuted values, (3) a p-value calculated based on your comparison of the estimate from the real data with the permutation distribution.
 
