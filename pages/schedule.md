@@ -26,19 +26,20 @@ _Skills/topics covered_
 * Week 14: Summary, course evals <!-- different ways to run R, blog post presentations -->
 
 <!-- 
-* Probability distribution functions
-* Control structures
-* Data types
-* Vectorized operations, functions
-* Dates and times
-* Data manipulation 2: dplyr
+* Control structures (permutation test!)
+* string manipulation
+* writing functions
+* different ways of running R (batch mode, interactive, knitr)
 * git
 * GitHub
+* Probability distribution functions
+* Vectorized operations
+* Dates and times
 
 _Activities_
 
 * Lady tasting tea simulation (from MOSAIC)
-* Facebook data vsualization
+* Facebook data visualization
 * permutation test with facebook data
 * estimate percentage of earth's surface covered with water, fraction w/in 5 miles of a highway, etc... (using mosaic, rgeo() and googleMap()) -->
 
