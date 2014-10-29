@@ -18,7 +18,7 @@
 
 %        The following variables are assumed by the standard preamble:
 
-\title{Data manipulation in R: {\tt dplyr} and {\tt tidyr}}
+\title{Data manipulation in R: \\ {\tt dplyr} and {\tt tidyr}}
 
 %	Global variable containing text of authorship acknowledgments and license terms:
 \newcommand{\LicenseText}{These slides were created for \href{http://statsteachr.org}{statsTeachR} by Nicholas Reich and are released under a \href{http://creativecommons.org/licenses/by-sa/3.0/deed.en_US}{Creative Commons Attribution-ShareAlike 3.0 Unported License}. }
