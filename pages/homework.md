@@ -10,6 +10,21 @@ Unless stated explicitly, the assignments below will not be "collected". However
 
 <!-- Please select a blog entry that you'd like to present (briefly) on Wednesday, October 8th.  These should be from 2013 or later and relate to statistics, data science, or R. See http://simplystatistics.org, http://www.statsblogs.com, http://r-bloggers.com, http://fivethirtyeight.com, or http://www.statschat.org.nz for examples. Please submit your choice on Moodle by midnight on Monday.  The presentations will be no more than 90 seconds long and should provide a brief summary of the entry, why you found it interesting, and what question you have after reading it. -->
 
+_Due week 10_
+
+* Read Matloff chapter 3.3 (on the `apply` family of functions in R).
+* Complete two modules from the `swirl` R Programming course:
+```7: lapply and sapply          8: vapply and tapply```
+* Submit a "final" version of your writeup via piazza. A few specific requirements:
+   + Submit a pdf file, no more than 5 pages.
+   + Be sure to include your name and the date on the first page of the report.
+   + Keep the report succinct. Remove unnecessary messages and output from the report using the `echo=FALSE`, `warnings=FALSE`, and/or `messages=FALSE` options in your code chunks. Do show code that you run and packages that you load (if any).
+   + Keep tidy section headers, you should have at least three sections, entitled "Introduction", "Data Analysis" (including your discussion of tidy data, data visualizations, and summary statistics), and "Permutation Test" (see below).
+   + Run a permutation test on one aspect of your data. It does not necessarily need to be a linear regression as shown in class. You could examine correlation between two variables, a regression coefficient, a contingency table association, or another method of your choosing. You are welcome to post a question to instructors on Piazza about the suitability of your test, although this is not required. The primary goal here is to gain experience running a simulation, although your statistical test must be appropriate for your data (i.e. no linear regressions on a binary outcome variable and no calculating correlations on binary data). Your report should show (1) the code you used to run the simulation, (2) a graphic showing the distribution of permuted values, (3) a p-value calculated based on your comparison of the estimate from the real data with the permutation distribution.
+
+
+
+
 _Due week 9_
 
 * Read Hadley Wickham's [paper on tidy data](http://vita.had.co.nz/papers/tidy-data.pdf).
