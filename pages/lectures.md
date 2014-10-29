@@ -13,5 +13,7 @@ Week 5: [Graphics in R: ggplot2](../lectures/week5/ggplot2.pdf)
 
 Week 7: [RMarkdown](../lectures/week7/week7_rmarkdown.Rpres)
 
-Week 8: [dplyr and tidyr](../lectures/week8/dplyr.pdf) | [Hadley's dplyr tutorial](https://www.dropbox.com/sh/i8qnluwmuieicxc/AAAgt9tIKoIm7WZKIyK25lh6a)
+Week 8: [dplyr and tidyr](../lectures/week8/dplyr.pdf) ,  [Hadley's dplyr tutorial](https://www.dropbox.com/sh/i8qnluwmuieicxc/AAAgt9tIKoIm7WZKIyK25lh6a)
+
+Week 9: [Simulation and permutations in R](../lectures/week9/perm-test.pdf), in-class script: (analyze-loop-times.R)[../scripts/analyze-loop-times.R)
 
