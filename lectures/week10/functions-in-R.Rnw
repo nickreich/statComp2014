@@ -90,13 +90,6 @@ my_function <- function(arg1, arg2) {
 \end{itemize}
 \end{block}
 
-<<define-function, eval=FALSE>>=
-my_function <- function(arg1, arg2) {
-    ## this is the body of the function
-    ...
-    return(something)
-}
-@
 \end{frame}
 
 
