@@ -20,9 +20,9 @@ _Skills/topics covered_
 * Week 8: Data manipulation: dplyr, tidyr
 * Week 9: Simulation and permutation tests in R
 * Week 10: Writing custom functions in R
-* Week 11: Simulation design <!-- group discussion of simulation design for reed-frost -->
-* Week 12: Simulation design (con't)
-* Week 13: Introduction to git and GitHub
+* Week 11: No Class (Tuesday schedule on Wednesday) <!-- group discussion of simulation design for reed-frost -->
+* Week 12: Introduction to git and GitHub
+* Week 13: More git and GitHub
 * Week 14: Summary, course evals <!-- different ways to run R, blog post presentations -->
 
 <!-- 
