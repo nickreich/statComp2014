@@ -1,0 +1,232 @@
+%% Module 2 beamer/knitr slides
+%% Biostatistics in Practice workshop, January 2014
+%% Nicholas Reich: nick [at] schoolph.umass.edu
+
+
+\documentclass[table]{beamer}
+
+
+\input{../preambles/statsTeachR_preamble_slides_knitr.tex}
+
+%        The following variables are assumed by the standard preamble:
+%	Global variable containing module name:
+\title{Writing functions in R}
+%	Global variable containing module shortname:
+%		(Currently unused, may be used in future.)
+\newcommand{\ModuleShortname}{functions}
+%	Global variable containing author name:
+\author{Nicholas G Reich}
+%	Global variable containing text of license terms:
+\newcommand{\LicenseText}{Made available under the Creative Commons Attribution-ShareAlike 3.0 Unported License: http://creativecommons.org/licenses/by-sa/3.0/deed.en\_US }
+%	Instructor: optional, can leave blank.
+%		Recommended format: {Instructor: Jane Doe}
+\newcommand{\Instructor}{5 November 2014}
+%	Course: optional, can leave blank.
+%		Recommended format: {Course: Biostatistics 101}
+\newcommand{\Course}{Introduction to Statistical Computing with R}
+
+%%%%%%%% IMPORTANT -- MUST HAVE [fragile] for some/all frames chunks to have output work correctly. 
+
+\begin{document}
+
+<<setup, include=FALSE>>=
+library(knitr)
+opts_chunk$set(fig.path='figure/beamer-',fig.align='center',fig.show='hold',size='footnotesize')
+library(ggplot2)
+theme_set(theme_bw())
+@
+
+
+\begin{frame}[plain]
+        \titlepage
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Learning goals}
+
+\begin{block}{At the end of this lecture you should be able to...}
+\begin{itemize}
+\item{Understand the elements that make up a function in R.}
+\item{Write a simple function in R.}
+\end{itemize}
+\end{block}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}[fragile]{What is a function?}
+
+\begin{block}{A function is a pre-defined algorithm}
+\begin{itemize}
+\item{It takes arguments as inputs.}
+\item{It returns a defined output.}
+\end{itemize}
+\end{block}
+
+<<define-function, eval=FALSE>>=
+my_function <- function(arg1, arg2) {
+    ## this is the body of the function
+    ...
+    return(something)
+}
+@
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}[fragile]{Why should I learn to write functions?}
+
+\begin{block}{}
+\begin{itemize}
+\item{If you repeat an operation within your code, consider functionalizing it.}
+\item{Pick good, short, clear, active names.}
+\item{Creates standardized ways to perform certain operations}
+\item{Decreases likelihood of errors.}
+\item{You type less code, especially when changing one piece.}
+\item{Facilitates literate coding, makes things simpler.}
+\item{Makes debugging simpler.}
+\end{itemize}
+\end{block}
+
+<<define-function, eval=FALSE>>=
+my_function <- function(arg1, arg2) {
+    ## this is the body of the function
+    ...
+    return(something)
+}
+@
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}[fragile]{What does this function calculate?}
+
+
+<<example-function>>=
+my_fun <- function(x) {
+    ## x is a numeric vector
+    y <- sum(x)/length(x)
+    return(y)
+}
+@
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}[fragile]{What does this function calculate?}
+
+
+<<run-example-function>>=
+my_fun <- function(x) {
+    ## x is a numeric vector
+    y <- sum(x)/length(x)
+    return(y)
+}
+a <- rnorm(100)
+my_fun(a)
+@
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}[fragile]{You can control what people put in}
+
+
+<<run-error-function>>=
+b <- c("fun", "with", "functions")
+my_fun(b)
+@
+
+<<fix-example-function>>=
+my_fun <- function(x) {
+    if(class(x)!="numeric") 
+        stop("x must be numeric")
+    y <- sum(x)/length(x)
+    return(y)
+}
+my_fun(b)
+my_fun(a)
+@
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}[fragile]{You can communicate with the user}
+
+Often these are couched in if-statements, i.e. ``if some unusual condition is met, here is something you should know''.
+<<warning-example-function>>=
+error_msg_fun <- function(x) {
+    message("Lift off!")
+    warning("Houston, we have a minor glitch. No biggie.")
+    stop("Houston, we have a major problem. ABORT!")
+}
+error_msg_fun(a)
+@
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}[fragile]{Other function features...}
+
+\begin{itemize}
+\item You can add `...' to the argument list for your function, to enable the user to pass unspecified arguments to function calls within the function.
+\item {\tt require()} ensures that the necessary packages are loaded. You should only use {\tt require()} when defining functions, otherwise, use {\tt library()}.
+\end{itemize}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}[fragile]{Other function features...}
+
+<<ellipses-pass, message=FALSE, fig.height=2>>=
+my_fun <- function(x, ...) {
+    require(ggplot2)
+    if(class(x)!="numeric") 
+        stop("x must be numeric")
+    p <- qplot(x, ...)
+    print(p)
+    y <- sum(x)/length(x)
+    return(y)
+}
+my_fun(a)
+@
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}[fragile]{Passing an argument}
+
+<<arg-pass, message=FALSE, fig.height=1.5>>=
+my_fun(a)
+@
+
+<<arg-pass-2, message=FALSE, fig.height=1.5>>=
+my_fun(a, alpha=0.1)
+@
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}[fragile]{Lexical scoping}
+
+Scoping is largely beyond the scope of this course, but a few important things:
+\begin{itemize}
+\item Scoping rules determine how ``free variables'' are assigned values. 
+\item Within functions, the safest/simplest thing is to make sure that everything is defined explicitly within the function.
+\item R uses ``Lexical scoping'' which means it looks up undefined variables in the environment where your function was defined!
+\end{itemize}
+
+More detail can be found in \href{http://adv-r.had.co.nz/Functions.html}{Hadley's book}.
+
+\end{frame}
+
+\end{document}

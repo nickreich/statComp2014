@@ -1,0 +1,233 @@
+%% Module 2 beamer/knitr slides
+%% Biostatistics in Practice workshop, January 2014
+%% Nicholas Reich: nick [at] schoolph.umass.edu
+
+
+\documentclass[table]{beamer}
+
+
+\input{../preambles/statsTeachR_preamble_slides_knitr.tex}
+
+%        The following variables are assumed by the standard preamble:
+%	Global variable containing module name:
+\title{Different ways of running R}
+%	Global variable containing module shortname:
+%		(Currently unused, may be used in future.)
+\newcommand{\ModuleShortname}{runR}
+%	Global variable containing author name:
+\author{Nicholas G Reich}
+%	Global variable containing text of license terms:
+\newcommand{\LicenseText}{Made available under the Creative Commons Attribution-ShareAlike 3.0 Unported License: http://creativecommons.org/licenses/by-sa/3.0/deed.en\_US }
+%	Instructor: optional, can leave blank.
+%		Recommended format: {Instructor: Jane Doe}
+\newcommand{\Instructor}{5 November 2014}
+%	Course: optional, can leave blank.
+%		Recommended format: {Course: Biostatistics 101}
+\newcommand{\Course}{Introduction to Statistical Computing with R}
+
+%%%%%%%% IMPORTANT -- MUST HAVE [fragile] for some/all frames chunks to have output work correctly. 
+
+\begin{document}
+
+<<setup, include=FALSE>>=
+library(knitr)
+opts_chunk$set(fig.path='figure/beamer-',fig.align='center',fig.show='hold',size='footnotesize')
+library(ggplot2)
+theme_set(theme_bw())
+@
+
+
+\begin{frame}[plain]
+        \titlepage
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{The many ways of running R code}
+
+\begin{block}{}
+\begin{itemize}
+\item{an interactive session}
+\item{{\tt knitr}}
+\item{\tt source(), for loading code}
+\item{{\tt R CMD BATCH} at command line, for running code}
+\end{itemize}
+\end{block}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Working with R interactively}
+
+To run interactive sessions in R, we have been using RStudio, but you can also run the R GUI app that comes with the R download. Or can run at the command line by typing 
+
+\vskip2em 
+
+{\tt \$ R}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Advantages of interactive sessions}
+
+\begin{block}{}
+\begin{itemize}
+\item{Encourages data exploration, tinkering, failure until you get it right}
+\item{Immediate feedback}
+\item{``Easy'' to debug (or at least isolate problem code)}
+\item{Archiving of old commands for easy insertion into source files (RStudio)}
+\end{itemize}
+\end{block}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Disadvantages of interactive sessions}
+
+\begin{block}{}
+\begin{itemize}
+\item{More difficult to reproduce your analysis}
+\item{When running long jobs, you can't work in R unless you start another R session}
+\item{Engourages sloppy, unsystematic coding practices}
+\end{itemize}
+\end{block}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Using {\tt knitr} to run R code}
+
+You can also use the {\tt knitr} package to run R code and produce reports (HTML, PDF, DOC formats) or slides (Slidy, Beamer, ioslides). Knitr relies on you having written a .Rmd (RMarkdown) or .Rnw (technically, a Sweave file, but this is sort of outdated technology) file.  Knitr is most easily used from within RStudio, but can also be called from within R, using for example:
+
+\vskip2em 
+
+{\tt R> rmarkdown::render("input.Rmd") }
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Advantages of using {\tt knitr}}
+
+\begin{block}{}
+\begin{itemize}
+\item{Easy to produce nice-looking, reproducible reports}
+\item{Runs directly within RStudio}
+\item{Caching of large chunks of code}
+\item{Customizability in terms of how much code/raw output you show}
+\end{itemize}
+\end{block}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Disadvantages of {\tt knitr}}
+
+\begin{block}{}
+\begin{itemize}
+\item{More difficult to troubleshoot/debug}
+\item{If something breaks, you have to start over from scratch}
+\item{Not as nibmle for data exploration}
+\item{Extra baggage if all you want to do is execute some lines of R code}
+\end{itemize}
+\end{block}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Sourcing R files directly}
+
+\begin{itemize}
+\item From within R, you can source a file containing R code.
+\item Typically, this is done to ``source'' a bunch of functions that reside in a separate file.
+\item This is essentially what loading a package does too (with some other bells and whistles).
+\end{itemize}
+
+\vskip2em 
+
+{\tt R> source("my-code.R") }
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Sourcing code: tips}
+
+\begin{block}{}
+\begin{itemize}
+\item{Keeps your code tidy and readable}
+\item{Keeps your code organized, e.g. one .R file for functions, another for code to run directly}
+\item{Best practice is to not operate on your existing workspace when you source a file, just load things in.}
+\item{{\tt source()} files that {\bf define} things, but not that {\bf do} things.}
+\end{itemize}
+\end{block}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Using {\tt R CMD BATCH} to run R code}
+
+\begin{itemize}
+\item You can run an R file without explicitly opening R. 
+\item Typical use case: you have a script that runs an analysis and outputs some data. You don't need a report, just want the output to be saved somewhere.
+\end{itemize}
+
+\vskip2em 
+
+{\tt \$ R CMD BATCH my-script.R my-script.Rout }
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Advantages of using {\tt R CMD BATCH}}
+
+\begin{block}{}
+\begin{itemize}
+\item{Can run files that take a long time without hanging up your R GUI.}
+\item{Results are reproducible}
+\item{You can see the output from the R session by looking at the .Rout file.}
+\item{The R script defines a clear workflow.}
+\end{itemize}
+\end{block}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}{Disadvantages of {\tt R CMD BATCH}}
+
+\begin{block}{}
+\begin{itemize}
+\item{Some people are unfamiliar with the command line interface}
+\item{As with knitr, harder to debug as you run, code needs to be polished}
+\end{itemize}
+\end{block}
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}[fragile]{Summary}
+
+
+\begin{block}{interactivity, {\tt knitr}, {\tt source()}, {\tt R CMD BATCH}, ...}
+\begin{itemize}
+\item I use each of these methods of running R on a daily basis. 
+\item They each have their time and place!
+\item It takes time to understand how, when, and why to use each one.
+\end{itemize}
+\end{block}
+
+\end{frame}
+
+
+\end{document}
