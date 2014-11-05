@@ -17,3 +17,5 @@ Week 8: [dplyr and tidyr](../lectures/week8/dplyr.pdf) ,  [Hadley's dplyr tutori
 
 Week 9: [Simulation and permutations in R](../lectures/week9/perm-test.pdf), in-class script: [analyze-loop-times.R](../scripts/analyze-loop-times.R)
 
+Week 10: [Writing functions in R](../lectures/week10/functions-in-R.pdf), [Different ways of running R](../lectures/week10/ways-to-run-R.pdf)
+
