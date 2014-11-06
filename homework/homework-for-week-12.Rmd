@@ -1,0 +1,25 @@
+---
+title: "Homework for Introduction to Statistical Computing with R"
+date: "due 19 Nov 2014"
+author: "taught by Nicholas Reich"
+output: pdf_document
+---
+
+This homework assignment is a little bit longer than the other ones because you have two weeks to do it. We will be able to provide better feedback and assistance if you ask for help far in advance of the deadline. My recommendation is to try to work on it a little bit every few days over the next two weeks. Don't let your R skills get stale!
+
+## Part 1 (2 pts)
+If you were handed a set of measurements (let's assume they are numerical observations on some variable), what is the first plot that you would like to see to help you visualize these data? If you were given the opportunity to summarize the observations with five quantitative metrics, what would you choose?
+
+## Part 2 (5 pts)
+Write a function that takes a numeric vector as input and (a) checks that the vector is numeric, and throws an error if it is not, (b) generates the plot you named in Question 1, and (c) prints out the five metrics in the R console, naming clearly what each of them represents. Name this function `data_summary()` Save this function in a file called `data_summary.R`.
+
+## Part 3 (5 pts)
+Create a written report (using RMarkdown, final doc should be PDF format). Your report should use the `source()` command to load your `data_summary()` function. It should also read in the `data-for-hw.rda` file made available for this assignment [link TKTK](link TKTK).  Finally, you should run your function on the three vectors called `vec1`, `vec2`, and `vec3`, and print the output for each call to your `data_sumary()` function.
+
+## Part 4 (2 pts)
+Create a user account on [github.com](www.github.com). Include your username in your writeup.
+
+
+## Extra credit
+1. At any time during the course, if you find an error (even as simple as a typo in any of the materials) you may correct it on GitHub and receive extra credit. Specifically, you will need to "fork" the [nickreich/statComp2014 repository](https://github.com/nickreich/statComp2014/tree/gh-pages) on GitHub, make the change in your copy of the repo, and then submit a "pull request" to me to incorporate your changes into the master branch of the course material. You will receive 1 point added to your final grade for every line of code edited, and successfully pulled into the master branch. 
+
