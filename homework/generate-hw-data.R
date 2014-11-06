@@ -13,11 +13,11 @@ vec2 <- sample(x=x, size=1200, replace=FALSE)
 vec3 <- as.character(c(rpois(100, 100)))
 
 ## vec2 with some missing
-idx1 <- sample(length(vec2), size=50)
-idx2 <- sample(length(vec2), size=50)
+idx <- sample(length(vec2), size=150)
 vec4 <- vec2
-vec4[idx1] <- -999
-vec4[idx2] <- -88
+vec4[idx[1:50]] <- -999
+vec4[idx[51:100]] <- -88
+vec4[idx[101:150]] <- NA
 
 ## 
 vec5 <- rpois(10000, 30)
