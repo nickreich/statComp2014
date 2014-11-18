@@ -190,7 +190,7 @@ Version control systems maintain a database on your computer that allows you to 
 
 \begin{block}{Demo... }
 \begin{itemize}
-        \item clone the BiPSandbox repository from GitHub
+        \item clone the \href{https://github.com/nickreich/statComp2014/tree/gh-pages}{nickreich/statComp2014} repository from GitHub
         \item simple commit/push/pull examples
 \end{itemize}
 \end{block}
