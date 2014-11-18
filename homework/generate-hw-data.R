@@ -32,4 +32,4 @@ vec6[sample(100, 10)] <- -8
 vec7 <- rnorm(10000)
 vec8 <- 4*vec7 + rnorm(10000, sd=10)
 
-save(vec1, vec2, vec3, vec4, vec5, vec6, file="homework/data-for-hw.rda")
+save(vec1, vec2, vec3, vec4, vec5, vec6, vec7, vec8, file="homework/data-for-hw.rda")
