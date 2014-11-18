@@ -43,7 +43,7 @@ The arguments x and y are numeric vectors indicating the x- and y-coordinates of
 
 The function should not plot or print out anything, but should return an object containing the relevant tabulation information. The specifics of the object returned by bin2d should be determined by you. Please write one paragraph describing the object that is returned by your implementation of bin2d.  \footnote{Acknowledgements to Roger Peng for this question.}
 
-Additionally, show the results from running your function on `(vec1, vec2)`, `(vec2, vec3)`, and `(vec1, vec3)`.
+Additionally, show the results from running your function on `(vec7, vec8)`.
 
 ## Part 8 (2 pts)
 Create a user account on [github.com](www.github.com). Include your username in your writeup, next to your name at the top of the document.
