@@ -12,7 +12,9 @@ Unless stated explicitly, the assignments below will not be "collected". However
 
 _Due week 13_
 
-* [Install git on your machine](http://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+* [Instal git on your machine](http://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+* Clone [the repository for this class](https://github.com/nickreich/statComp2014/tree/gh-pages)
+* Extra credit: find a tpyo, or improve something (pending subjective approval of instructor), and submit a pull request! Extra credit will only be given if edits are deemed appropriate by instructor and pull request is accepted.
 
 _Due week 12_
 
