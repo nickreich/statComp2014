@@ -19,3 +19,5 @@ Week 9: [Simulation and permutations in R](../lectures/week9/perm-test.pdf), in-
 
 Week 10: [Writing functions in R](../lectures/week10/functions-in-R.pdf), [Different ways of running R](../lectures/week10/ways-to-run-R.pdf)
 
+Week 12: [Using git and GitHub with R](../lectures/week12/week12-git-slides.pdf)
+
