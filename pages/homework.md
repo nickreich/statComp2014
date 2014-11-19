@@ -13,6 +13,8 @@ Unless stated explicitly, the assignments below will not be "collected". However
 _Due week 13_
 
 * [Instal git on your machine](http://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+* Set up [GitHub on your machine using SSH keys](https://help.github.com/articles/generating-ssh-keys/): IGNORE THEIR ENCOURAGEMENT TO SET UP THE GITHUB APP!
+* Watch [this video on setting up RStudio projects using GitHub](http://www.youtube.com/watch?v=YxZ8J2rqhEM)
 * Clone [the repository for this class](https://github.com/nickreich/statComp2014/tree/gh-pages) using RStudio
 * Extra credit: find a tpyo, or improve something (pending subjective approval of instructor), and submit a pull request! Extra credit will only be given if edits are deemed appropriate by instructor and pull request is accepted.
 
