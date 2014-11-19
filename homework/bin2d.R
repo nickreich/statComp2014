@@ -9,6 +9,6 @@ bin2d <- function(x, y, nbin){
     return(out)
 } 
 
-load(url("http://nickreich.github.io/statComp2014/homework/data-for-hw.rda"))
+load(url('http://nickreich.github.io/statComp2014/homework/data-for-hw.rda'))
 bdat <- bin2d(vec7, vec8, nbin=4)
 ggplot(bdat) + geom_tile(aes(x=bin_x, y=bin_y, fill=Freq))
