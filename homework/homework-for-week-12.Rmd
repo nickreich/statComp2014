@@ -53,4 +53,4 @@ Create a user account on [github.com](www.github.com). Include your username in 
 
 2. Are the results of your `bin2d` function tidy data? Plot the ouput from your bin2d object using `ggplot2` and `geom_tile()`.
 
-3. Adapt your `bind2d` function to take the `na_values` argument that your `data_summary_missing()` function also had. Demonstrate that it works by running `bin2d` on `vec4` and `vec5`.
+3. Adapt your `bin2d` function to take the `na_values` argument that your `data_summary_missing()` function also had. Demonstrate that it works by running `bin2d` on `vec4` and `vec5`.
